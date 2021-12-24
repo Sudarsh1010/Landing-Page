@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@media (max-width: 500px) {
+    #header {
+      flex-direction: column;
+    }
+    
+    #header-img {
+      display: none;
+    }
+    #logo {
+      text-align: center
+    }
+   
+    #logo {
+      padding: 10px;
+    }
+    #nav-bar {
+      width: 90%;
+      height: 40px;
+      justify-content: space-around;
+    }
+}
+
+li, a {
+    color: #000000;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#mid-nav h1 {
+    color: #000000;
+    cursor: default;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: #ffffff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; 
+}
+
+#header-img {
+    cursor: pointer;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+#nav-bar li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#nav-bar li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+#nav-bar li a:hover {
+    color: rgb(128, 128, 128);
+}
+
+#features {
+    padding: 30px 0;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #dddddd;
+}
+
+#features-head h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#features-desc {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+#features-left h2 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+} 
+
+#features-left p {
+    color: #6e6e6e;
+    text-align: center;
+}
+
+#subscription {
+    padding: 30px 0;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#subscription h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#subscription form {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=email] {
+    width: 20%;
+    padding: 5px;
+}
+
+input[type=submit] {
+    width: 5%;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(224, 224, 224, 0.8);
+}
